@@ -1,0 +1,645 @@
+.navContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 30px 100px 1fr;
+  width: 100%;
+  grid-template-areas: "head head head" "logo input iconos " "nav nav nav "; }
+  .navContainer .griditems {
+    background-color: black; }
+  .navContainer .a0 {
+    grid-area: head;
+    color: #ffffff;
+    background-color: #3dc5ac;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px; }
+  .navContainer .a1 {
+    grid-area: logo;
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+    .navContainer .a1 img {
+      width: 230px;
+      margin-left: 50px; }
+  .navContainer .a2 {
+    grid-area: input;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .navContainer .a2 input {
+      width: 100%;
+      padding: 5px;
+      height: 45px;
+      border-radius: 15px;
+      font-family: akumal; }
+    .navContainer .a2::placeholder {
+      color: black; }
+  .navContainer .a3 {
+    display: flex;
+    align-items: center;
+    justify-content: end; }
+    .navContainer .a3 a {
+      color: whitesmoke;
+      text-decoration: none; }
+      .navContainer .a3 a:hover {
+        color: #3dc5ac; }
+    .navContainer .a3 .iconoContainer {
+      grid-area: iconos;
+      display: flex;
+      justify-content: space-evenly;
+      align-content: center;
+      width: 80%;
+      font-weight: bolder;
+      letter-spacing: 2px; }
+    .navContainer .a3 .icono_1 {
+      display: flex;
+      text-align: center;
+      padding: 10px; }
+      .navContainer .a3 .icono_1 .icono1 {
+        width: 30px; }
+    .navContainer .a3 .icono_2 {
+      display: flex;
+      padding: 10px;
+      text-align: center;
+      margin-top: 2px; }
+      .navContainer .a3 .icono_2 .icono2 {
+        width: 32px;
+        box-sizing: content-box; }
+    .navContainer .a3 .icono_3 {
+      display: flex;
+      padding: 10px;
+      text-align: center; }
+      .navContainer .a3 .icono_3 .icono3 {
+        width: 30px;
+        padding: 5px;
+        box-sizing: content-box; }
+
+.a4 {
+  grid-area: nav;
+  border-top: 1px solid whitesmoke;
+  height: 70px;
+  width: 100%; }
+  .a4 a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 2px; }
+  .a4 ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    padding: 30px; }
+    .a4 ul li {
+      list-style: none;
+      color: white; }
+
+.navConteiner1 {
+  display: none;
+  grid-area: bar; }
+
+.slide {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 20px; }
+  .slide .contslide {
+    width: 200%;
+    margin: 0 auto;
+    display: flex;
+    animation: pasar 5s infinite alternate;
+    animation-timing-function: ease-in;
+    animation-timing-function: ease-out; }
+    .slide .contslide li {
+      list-style: none;
+      padding: 0px; }
+  .slide .slide1 {
+    width: 100%;
+    height: auto;
+    margin-top: 7px; }
+
+@keyframes pasar {
+  0% {
+    margin-left: 0; }
+  35% {
+    margin-left: 0; }
+  50% {
+    margin-left: -100%; }
+  100% {
+    margin-left: -100%; } }
+
+.bannerGris {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .bannerGris img {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px; }
+
+.atajosGrid {
+  width: 80%;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 500px;
+  gap: 20px; }
+  .atajosGrid .atajo {
+    column-gap: 10px;
+    background-color: #3dc5ac;
+    object-fit: cover; }
+    .atajosGrid .atajo img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 15px; }
+      .atajosGrid .atajo img:hover {
+        transform: scale(1.2);
+        transition: 2s; }
+  .atajosGrid .b1 {
+    background-color: #3dc5ac;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; }
+  .atajosGrid .b2 {
+    background-color: #3dc5ac;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; }
+
+.tituloslide {
+  font-family: akumal;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px; }
+
+.slideproductos {
+  width: 75%;
+  border-radius: 15px;
+  height: 100%;
+  margin: auto;
+  margin-top: 100px;
+  overflow: auto; }
+  .slideproductos .slideproductos_ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 20px; }
+    .slideproductos .slideproductos_ul li {
+      list-style: none; }
+      .slideproductos .slideproductos_ul li img {
+        height: 200px;
+        border-radius: 15px; }
+  .slideproductos::-webkit-scrollbar {
+    height: 7px; }
+  .slideproductos::-webkit-scrollbar-thumb {
+    background-color: #3dc5ac;
+    border-radius: 7px;
+    border-left: 30px solid #cccccc; }
+  .slideproductos::-webkit-scrollbar-track {
+    background-color: #cccccc; }
+
+.tituloformularios {
+  font-family: akumal;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px; }
+
+.formularios {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 350px;
+  gap: 20px; }
+  .formularios .c1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 15px; }
+    .formularios .c1 .izquierdo {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .formularios .c1 .izquierdo .titulo h3 {
+        font-size: 35px;
+        width: 150px;
+        text-align: center; }
+    .formularios .c1 .derecho {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+      padding: 10px; }
+      .formularios .c1 .derecho .textoemail h4 {
+        font-size: 20px;
+        padding: 10px; }
+      .formularios .c1 .derecho .email1 {
+        width: 300px;
+        text-align: center;
+        border-radius: 50px;
+        height: 30px;
+        margin-bottom: 20px; }
+      .formularios .c1 .derecho .boton {
+        width: 100px;
+        border-radius: 15px;
+        background-color: #3dc5ac;
+        color: whitesmoke; }
+        .formularios .c1 .derecho .boton:hover {
+          color: black; }
+  .formularios .c2 {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 15px; }
+    .formularios .c2 .formulario_h2 {
+      text-align: center; }
+    .formularios .c2 .campos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+      .formularios .c2 .campos form label {
+        font-size: 20px; }
+      .formularios .c2 .campos .nombre_campos {
+        margin-top: 10px; }
+        .formularios .c2 .campos .nombre_campos input {
+          margin-top: 10px;
+          text-align: center;
+          width: 300px;
+          border-radius: 50px;
+          height: 30px; }
+      .formularios .c2 .campos .email_campos {
+        margin-top: 10px; }
+        .formularios .c2 .campos .email_campos input {
+          margin-top: 10px;
+          text-align: center;
+          width: 300px;
+          border-radius: 50px;
+          height: 30px; }
+      .formularios .c2 .campos .password_campos {
+        margin-top: 10px; }
+        .formularios .c2 .campos .password_campos input {
+          margin-top: 10px;
+          text-align: center;
+          width: 300px;
+          border-radius: 50px;
+          height: 30px; }
+      .formularios .c2 .campos .boton_campos input {
+        width: 100px;
+        border-radius: 15px;
+        background-color: #3dc5ac;
+        color: whitesmoke;
+        margin-top: 10px;
+        margin-left: 10px; }
+        .formularios .c2 .campos .boton_campos input:hover {
+          color: black; }
+
+.footer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 110px; }
+  .footer .institucional,
+  .footer .contacto,
+  .footer .redes {
+    background-color: rgba(211, 207, 207, 0.781);
+    padding: 50px;
+    height: 400px; }
+    .footer .institucional ul,
+    .footer .contacto ul,
+    .footer .redes ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 200px; }
+      .footer .institucional ul li,
+      .footer .contacto ul li,
+      .footer .redes ul li {
+        list-style: none;
+        font-size: 20px;
+        margin-top: 20px; }
+    .footer .institucional a,
+    .footer .contacto a,
+    .footer .redes a {
+      text-decoration: none;
+      color: black; }
+
+.mujerTitulo {
+  margin-top: 20px;
+  text-align: center;
+  font-family: akumal; }
+
+.contenedorPrincipal {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-top: 30px;
+  justify-content: space-evenly; }
+  .contenedorPrincipal .contenedorFiltros {
+    width: 90%;
+    height: auto;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin-left: 50px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-rows: 1fr 20fr; }
+    .contenedorPrincipal .contenedorFiltros h2 {
+      margin-left: 10px; }
+    .contenedorPrincipal .contenedorFiltros .filtros {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      height: 300px; }
+      .contenedorPrincipal .contenedorFiltros .filtros .color {
+        display: grid;
+        grid-template-rows: 1fr 20fr; }
+        .contenedorPrincipal .contenedorFiltros .filtros .color .colores {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          margin-left: 10px; }
+      .contenedorPrincipal .contenedorFiltros .filtros .chaqueta {
+        display: grid;
+        grid-template-rows: 1fr 20fr; }
+        .contenedorPrincipal .contenedorFiltros .filtros .chaqueta .chaquetas {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          margin-left: 10px; }
+      .contenedorPrincipal .contenedorFiltros .filtros .pantalon {
+        display: grid;
+        grid-template-rows: 1fr 20fr;
+        height: 500px; }
+        .contenedorPrincipal .contenedorFiltros .filtros .pantalon .pantalones {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          margin-left: 10px; }
+  .contenedorPrincipal .mujer {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipal .mujer ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      padding: 30px; }
+      .contenedorPrincipal .mujer ul li {
+        list-style: none;
+        width: 220px;
+        height: 360px;
+        margin-bottom: 30px;
+        overflow: hidden; }
+        .contenedorPrincipal .mujer ul li img {
+          width: 260px;
+          height: auto; }
+          .contenedorPrincipal .mujer ul li img:hover {
+            transform: scale(1.2);
+            transition: 1s; }
+
+.hombreTitulo {
+  margin-top: 20px;
+  text-align: center;
+  font-family: akumal; }
+
+.contenedorPrincipalH {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-top: 30px;
+  justify-content: space-evenly; }
+  .contenedorPrincipalH .contenedorFiltrosH {
+    width: 90%;
+    height: auto;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin-left: 50px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-rows: 1fr 20fr; }
+    .contenedorPrincipalH .contenedorFiltrosH h2 {
+      margin-left: 10px; }
+    .contenedorPrincipalH .contenedorFiltrosH .filtrosH {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      height: 300px; }
+      .contenedorPrincipalH .contenedorFiltrosH .filtrosH .colorH {
+        display: grid;
+        grid-template-rows: 1fr 4fr; }
+        .contenedorPrincipalH .contenedorFiltrosH .filtrosH .colorH .coloresH {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          margin-left: 10px;
+          height: 300px; }
+      .contenedorPrincipalH .contenedorFiltrosH .filtrosH .chaquetaH {
+        display: grid;
+        grid-template-rows: 1fr 4fr; }
+        .contenedorPrincipalH .contenedorFiltrosH .filtrosH .chaquetaH .chaquetasH {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          margin-left: 10px;
+          height: 300px; }
+      .contenedorPrincipalH .contenedorFiltrosH .filtrosH .pantalonH {
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+        height: 500px; }
+        .contenedorPrincipalH .contenedorFiltrosH .filtrosH .pantalonH .pantalonesH {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          margin-left: 10px;
+          height: 300px; }
+  .contenedorPrincipalH .hombre {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipalH .hombre ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      padding: 30px; }
+      .contenedorPrincipalH .hombre ul li {
+        list-style: none;
+        width: 220px;
+        height: 360px;
+        margin-bottom: 30px;
+        overflow: hidden; }
+        .contenedorPrincipalH .hombre ul li img {
+          width: 260px;
+          height: auto; }
+          .contenedorPrincipalH .hombre ul li img:hover {
+            transform: scale(1.2);
+            transition: 1s; }
+
+.accesoriosTitulo {
+  margin-top: 20px;
+  text-align: center;
+  font-family: akumal; }
+
+.contenedorPrincipalA {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-top: 30px;
+  justify-content: space-evenly; }
+  .contenedorPrincipalA .contenedorFiltrosA {
+    width: 90%;
+    height: auto;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin-left: 50px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-rows: 1fr 20fr; }
+    .contenedorPrincipalA .contenedorFiltrosA .contenedorFiltrosA h2 {
+      margin-left: 10px; }
+    .contenedorPrincipalA .contenedorFiltrosA .filtrosA {
+      display: flex;
+      flex-direction: column;
+      justify-content: start; }
+      .contenedorPrincipalA .contenedorFiltrosA .filtrosA .colorA {
+        display: grid;
+        grid-template-rows: 1fr 4fr; }
+      .contenedorPrincipalA .contenedorFiltrosA .filtrosA .coloresA {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 10px;
+        height: 300px; }
+      .contenedorPrincipalA .contenedorFiltrosA .filtrosA .chaquetaA {
+        display: grid;
+        grid-template-rows: 1fr 4fr; }
+      .contenedorPrincipalA .contenedorFiltrosA .filtrosA .chaquetasA {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        height: 300px; }
+      .contenedorPrincipalA .contenedorFiltrosA .filtrosA .pantalonA {
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+        height: 500px; }
+      .contenedorPrincipalA .contenedorFiltrosA .filtrosA .pantalonesA {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        height: 300px; }
+  .contenedorPrincipalA .accesorios {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipalA .accesorios ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      padding: 30px; }
+      .contenedorPrincipalA .accesorios ul li {
+        border: 4px solid rgba(211, 207, 207, 0.781);
+        list-style: none;
+        width: 250px;
+        height: 360px;
+        margin-bottom: 30px;
+        overflow: hidden; }
+        .contenedorPrincipalA .accesorios ul li img {
+          width: 260px;
+          height: auto; }
+          .contenedorPrincipalA .accesorios ul li img:hover {
+            transform: scale(1.2);
+            transition: 1s; }
+
+.ofertasTitulo {
+  margin-top: 20px;
+  text-align: center;
+  font-family: akumal; }
+
+.contenedorPrincipalO {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-top: 30px;
+  justify-content: space-evenly; }
+  .contenedorPrincipalO .contenedorFiltrosO {
+    width: 90%;
+    height: auto;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin-left: 50px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-rows: 1fr 20fr; }
+    .contenedorPrincipalO .contenedorFiltrosO .contenedorFiltrosO h2 {
+      margin-left: 10px; }
+    .contenedorPrincipalO .contenedorFiltrosO .filtrosO {
+      display: flex;
+      flex-direction: column;
+      justify-content: start; }
+      .contenedorPrincipalO .contenedorFiltrosO .filtrosO .colorO {
+        display: grid;
+        grid-template-rows: 1fr 4fr; }
+      .contenedorPrincipalO .contenedorFiltrosO .filtrosO .coloresO {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 10px;
+        height: 300px; }
+      .contenedorPrincipalO .contenedorFiltrosO .filtrosO .chaquetaO {
+        display: grid;
+        grid-template-rows: 1fr 4fr; }
+      .contenedorPrincipalO .contenedorFiltrosO .filtrosO .chaquetasO {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        height: 300px; }
+      .contenedorPrincipalO .contenedorFiltrosO .filtrosO .pantalonO {
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+        height: 500px; }
+      .contenedorPrincipalO .contenedorFiltrosO .filtrosO .pantalonesO {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        height: 300px; }
+  .contenedorPrincipalO .ofertas {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipalO .ofertas ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      padding: 30px; }
+      .contenedorPrincipalO .ofertas ul li {
+        list-style: none;
+        width: 220px;
+        height: 360px;
+        margin-bottom: 30px;
+        overflow: hidden; }
+        .contenedorPrincipalO .ofertas ul li img {
+          width: 260px;
+          height: auto; }
+          .contenedorPrincipalO .ofertas ul li img:hover {
+            transform: scale(1.2);
+            transition: 1s; }

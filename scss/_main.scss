@@ -1,0 +1,255 @@
+.slide {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 20px;
+  .contslide {
+    width: 200%;
+    margin: 0 auto;
+    display: flex;
+    animation: pasar 5s infinite alternate;
+    animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
+    li {
+      list-style: none;
+      padding: 0px;
+    }
+  }
+  .slide1 {
+    width: 100%;
+    height: auto;
+    margin-top: 7px;
+  }
+
+  @keyframes pasar {
+    0% {
+      margin-left: 0;
+    }
+    35% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: -100%;
+    }
+    100% {
+      margin-left: -100%;
+    }
+  }
+}
+
+.bannerGris {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  img {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+.atajosGrid {
+  width: 80%;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 500px;
+  gap: 20px;
+  .atajo {
+    column-gap: 10px;
+    background-color: #3dc5ac;
+    object-fit: cover;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 15px;
+      &:hover {
+        transform: scale(1.2);
+        transition: 2s;
+      }
+    }
+  }
+  .b1 {
+    background-color: #3dc5ac;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .b2 {
+    background-color: #3dc5ac;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.tituloslide {
+  font-family: akumal;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.slideproductos {
+  width: 75%;
+  border-radius: 15px;
+  height: 100%;
+  margin: auto;
+  margin-top: 100px;
+  overflow: auto;
+
+  .slideproductos_ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 20px;
+    li {
+      list-style: none;
+      img {
+        height: 200px;
+        border-radius: 15px;
+      }
+    }
+  }
+  &::-webkit-scrollbar {
+    height: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #3dc5ac;
+    border-radius: 7px;
+    border-left: 30px solid rgb(204, 204, 204);
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgb(204, 204, 204);
+  }
+}
+
+.tituloformularios {
+  font-family: akumal;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.formularios {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 350px;
+  gap: 20px;
+  .c1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 15px;
+    .izquierdo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .titulo h3 {
+        font-size: 35px;
+        width: 150px;
+        text-align: center;
+      }
+    }
+    .derecho {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+      padding: 10px;
+      .textoemail h4 {
+        font-size: 20px;
+        padding: 10px;
+      }
+      .email1 {
+        width: 300px;
+        text-align: center;
+        border-radius: 50px;
+        height: 30px;
+        margin-bottom: 20px;
+      }
+
+      .boton {
+        width: 100px;
+        border-radius: 15px;
+        background-color: #3dc5ac;
+        color: whitesmoke;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+  .c2 {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 15px;
+    .formulario_h2 {
+      text-align: center;
+    }
+    .campos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      form label {
+        font-size: 20px;
+      }
+      .nombre_campos {
+        margin-top: 10px;
+        input {
+          margin-top: 10px;
+          text-align: center;
+          width: 300px;
+          border-radius: 50px;
+          height: 30px;
+        }
+      }
+      .email_campos {
+        margin-top: 10px;
+        input {
+          margin-top: 10px;
+          text-align: center;
+          width: 300px;
+          border-radius: 50px;
+          height: 30px;
+        }
+      }
+      .password_campos {
+        margin-top: 10px;
+        input {
+          margin-top: 10px;
+          text-align: center;
+          width: 300px;
+          border-radius: 50px;
+          height: 30px;
+        }
+      }
+      .boton_campos input {
+        width: 100px;
+        border-radius: 15px;
+        background-color: #3dc5ac;
+        color: whitesmoke;
+        margin-top: 10px;
+        margin-left: 10px;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.accesoriosTitulo {
+  margin-top: 20px;
+  text-align: center;
+  font-family: akumal;
+}
+.contenedorPrincipalA {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  .contenedorFiltrosA {
+    width: 90%;
+    height: auto;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin-left: 50px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-rows: 1fr 20fr;
+    .contenedorFiltrosA h2 {
+      margin-left: 10px;
+    }
+    .filtrosA {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      .colorA {
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+      }
+      .coloresA {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 10px;
+        height: 300px;
+      }
+      .chaquetaA {
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+      }
+      .chaquetasA {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        height: 300px;
+      }
+      .pantalonA {
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+        height: 500px;
+      }
+      .pantalonesA {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        height: 300px;
+      }
+    }
+  }
+  .accesorios {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      padding: 30px;
+      li {
+        border: 4px solid rgba(211, 207, 207, 0.781);
+        list-style: none;
+        width: 250px;
+        height: 360px;
+        margin-bottom: 30px;
+        overflow: hidden;
+        img {
+          width: 260px;
+          height: auto;
+          &:hover {
+            transform: scale(1.2);
+            transition: 1s;
+          }
+        }
+      }
+    }
+  }
+}
