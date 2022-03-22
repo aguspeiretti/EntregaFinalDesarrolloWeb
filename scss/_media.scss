@@ -1,0 +1,235 @@
+@media screen and (max-width: 1480px) {
+  .navContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 70px 1fr 1fr;
+    width: 100%;
+
+    grid-template-areas:
+      "head head head "
+      "logo logo iconos "
+      "input input input "
+      "nav nav nav ";
+  }
+  .a2 {
+    display: flex;
+    justify-content: center;
+  }
+  .a2 input {
+    width: 80%;
+  }
+
+  .mujer ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .hombre ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .accesorios ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .ofertas ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .mujer ul {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+    .hombre ul {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+    .accesorios ul {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+    .ofertas ul {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .navContainer {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 30px 100px 1fr;
+
+      grid-template-areas:
+        "head head head "
+        "logo logo iconos "
+        "input input input "
+        "nav nav nav ";
+    }
+    .iconoContainer {
+      justify-content: end;
+    }
+    .a0 {
+      font-size: 10px;
+    }
+    .a1 {
+      justify-content: end;
+    }
+
+    .a1 img {
+      width: 200px;
+      margin-left: 20px;
+    }
+    .a2 {
+      height: 90px;
+    }
+    .slide {
+      width: 100%;
+    }
+    .a3 {
+      justify-content: center;
+    }
+    .iconoContainer {
+      width: 80px;
+    }
+    .navConteiner1 {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 30px;
+    }
+    .navInput {
+      display: none;
+    }
+    .bannerGris {
+      margin-top: 0px;
+      overflow: hidden;
+    }
+    .bannerGris img {
+      width: 200%;
+    }
+    .a4 {
+      display: none;
+      font-weight: lighter;
+      letter-spacing: 0;
+    }
+    .atajosGrid {
+      margin-top: 40px;
+    }
+
+    .atajosGrid {
+      grid-template-columns: 1fr;
+    }
+
+    .formularios {
+      grid-template-columns: auto;
+    }
+
+    .footer {
+      grid-template-columns: auto;
+      margin-top: 300px;
+    }
+
+    .icono_1,
+    .icono_3 {
+      display: none;
+    }
+
+    .c1 {
+      grid-template-columns: 1fr;
+    }
+
+    .contenedorPrincipal {
+      grid-template-columns: 90%;
+    }
+    .contenedorFiltros {
+      display: none;
+    }
+    .contenedorPrincipalH {
+      grid-template-columns: 90%;
+    }
+    .contenedorFiltrosH {
+      display: none;
+    }
+    .contenedorPrincipalA {
+      grid-template-columns: 90%;
+    }
+    .contenedorFiltrosA {
+      display: none;
+    }
+    .contenedorPrincipalO {
+      grid-template-columns: 90%;
+    }
+    .contenedorFiltrosO {
+      display: none;
+    }
+    .mujer ul {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    .mujer ul li {
+      margin-left: -8px;
+    }
+  }
+  .hombre ul {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .hombre ul li {
+    margin-left: -8px;
+  }
+  .accesorios ul {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .accesorios ul li {
+    margin-left: -8px;
+  }
+  .ofertas ul {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .ofertas ul li {
+    margin-left: -8px;
+  }
+  .navMenu {
+    position: fixed;
+    top: 220px;
+    bottom: 0;
+    background: #000000;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+  }
+  .navMenu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: akumal;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5rem;
+    height: 20%;
+  }
+
+  .navInput:checked + .navMenu {
+    clip-path: circle(100% at center);
+  }
+}
+@media screen and (max-width: 510px) {
+  .a1 img {
+    width: 150px;
+  }
+  .footer {
+    margin-top: 400px;
+  }
+}
