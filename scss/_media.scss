@@ -1,4 +1,4 @@
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1280px) {
   .navContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -10,16 +10,17 @@
       "logo logo iconos "
       "input input input "
       "nav nav nav ";
-  }
-  .a2 {
-    display: flex;
-    justify-content: center;
-  }
-  .a2 input {
-    width: 80%;
+    .a2 {
+      display: flex;
+      justify-content: center;
+      .imput {
+        width: 80%;
+        margin-bottom: 10px;
+      }
+    }
   }
 
-  .mujer ul {
+  .a2 .mujer ul {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
   }
@@ -65,48 +66,40 @@
         "logo logo iconos "
         "input input input "
         "nav nav nav ";
-    }
-    .iconoContainer {
-      justify-content: end;
-    }
-    .a0 {
-      font-size: 10px;
-    }
-    .a1 {
-      justify-content: end;
-    }
-
-    .a1 img {
-      width: 200px;
-      margin-left: 20px;
-    }
-    .a2 {
-      height: 90px;
-    }
-    .slide {
-      width: 100%;
-    }
-    .a3 {
-      justify-content: center;
-    }
-    .iconoContainer {
-      width: 80px;
-    }
-    .navConteiner1 {
-      display: block;
-      position: absolute;
-      top: 60px;
-      left: 30px;
-    }
-    .navInput {
-      display: none;
-    }
-    .bannerGris {
-      margin-top: 0px;
-      overflow: hidden;
-    }
-    .bannerGris img {
-      width: 200%;
+      .bannerGris {
+        margin-top: 0px;
+        overflow: hidden;
+        img {
+          width: 200%;
+        }
+      }
+      .iconoContainer {
+        justify-content: end;
+        width: 80px;
+        .icono_1,
+        .icono_3 {
+          display: none;
+        }
+        .a0 {
+          font-size: 10px;
+        }
+      }
+      .a1 {
+        justify-content: end;
+        img {
+          width: 200px;
+          margin-left: 20px;
+        }
+        .a2 {
+          height: 90px;
+        }
+        .slide {
+          width: 100%;
+        }
+        .a3 {
+          justify-content: center;
+        }
+      }
     }
     .a4 {
       display: none;
@@ -115,14 +108,14 @@
     }
     .atajosGrid {
       margin-top: 40px;
-    }
-
-    .atajosGrid {
       grid-template-columns: 1fr;
     }
 
     .formularios {
       grid-template-columns: auto;
+      .c1 {
+        grid-template-columns: 1fr;
+      }
     }
 
     .footer {
@@ -130,13 +123,14 @@
       margin-top: 300px;
     }
 
-    .icono_1,
-    .icono_3 {
-      display: none;
-    }
-
-    .c1 {
-      grid-template-columns: 1fr;
+    .navConteiner1 {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 30px;
+      .navInput {
+        display: none;
+      }
     }
 
     .contenedorPrincipal {
@@ -166,10 +160,9 @@
     .mujer ul {
       grid-template-columns: 1fr;
       justify-items: center;
-    }
-
-    .mujer ul li {
-      margin-left: -8px;
+      li {
+        margin-left: -8px;
+      }
     }
   }
   .hombre ul {
