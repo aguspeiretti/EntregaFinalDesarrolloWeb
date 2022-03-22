@@ -1,12 +1,29 @@
+@font-face {
+  font-family: "banner";
+  src: url(../fuentes/Leon-Regular_TRIAL.ttf); }
+
+@font-face {
+  font-family: "akumal";
+  src: url(/fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: "banner";
+  src: url(../fuentes/Leon-Regular_TRIAL.ttf); }
+
+@font-face {
+  font-family: "akumal";
+  src: url(/fuentes/akumal.ttf); }
+
 .navContainer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 30px 100px 1fr;
+  grid-template-rows: 25px 85px 50px;
   width: 100%;
   grid-template-areas: "head head head" "logo input iconos " "nav nav nav "; }
   .navContainer .griditems {
     background-color: black; }
   .navContainer .a0 {
+    height: 25px;
     grid-area: head;
     color: #ffffff;
     background-color: #3dc5ac;
@@ -15,8 +32,11 @@
     display: flex;
     text-align: center;
     align-items: center;
+    align-content: center;
     justify-content: center;
     letter-spacing: 1px; }
+    .navContainer .a0 p {
+      margin-top: 12px; }
   .navContainer .a1 {
     grid-area: logo;
     display: flex;
@@ -44,7 +64,8 @@
     justify-content: end; }
     .navContainer .a3 a {
       color: whitesmoke;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: 0.3s; }
       .navContainer .a3 a:hover {
         color: #3dc5ac; }
     .navContainer .a3 .iconoContainer {
@@ -53,7 +74,9 @@
       justify-content: space-evenly;
       align-content: center;
       width: 80%;
+      font-family: akumal;
       font-weight: bolder;
+      font-size: 0.8rem;
       letter-spacing: 2px; }
     .navContainer .a3 .icono_1 {
       display: flex;
@@ -81,19 +104,25 @@
 .a4 {
   grid-area: nav;
   border-top: 1px solid whitesmoke;
-  height: 70px;
+  height: 50px;
   width: 100%; }
   .a4 a {
     color: white;
+    font-size: 0.9rem;
     text-decoration: none;
     font-weight: bolder;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-family: akumal;
+    transition: 0.4s; }
+    .a4 a:hover {
+      color: #3dc5ac; }
   .a4 ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 40px;
-    padding: 30px; }
+    align-content: center;
+    height: 50px;
+    padding: 20px; }
     .a4 ul li {
       list-style: none;
       color: white; }
@@ -106,7 +135,7 @@
   width: 90%;
   margin: auto;
   overflow: hidden;
-  margin-top: 20px; }
+  margin-top: 10px; }
   .slide .contslide {
     width: 200%;
     margin: 0 auto;
@@ -133,18 +162,18 @@
     margin-left: -100%; } }
 
 .bannerGris {
-  margin-top: 60px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr; }
   .bannerGris img {
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 20px; }
+    margin-top: 30px;
+    margin-bottom: 10px; }
 
 .atajosGrid {
   width: 80%;
   margin: auto;
-  margin-top: 90px;
+  margin-top: 60px;
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -176,7 +205,7 @@
     justify-content: center; }
 
 .tituloslide {
-  font-family: akumal;
+  font-family: "akumal";
   font-size: 30px;
   text-align: center;
   margin-top: 100px; }
@@ -197,20 +226,20 @@
       .slideproductos .slideproductos_ul li img {
         height: 200px;
         border-radius: 15px; }
-  .slideproductos::-webkit-scrollbar {
-    height: 7px; }
-  .slideproductos::-webkit-scrollbar-thumb {
-    background-color: #3dc5ac;
-    border-radius: 7px;
-    border-left: 30px solid #cccccc; }
-  .slideproductos::-webkit-scrollbar-track {
-    background-color: #cccccc; }
+    .slideproductos .slideproductos_ul::-webkit-scrollbar {
+      height: 7px; }
+    .slideproductos .slideproductos_ul::-webkit-scrollbar-thumb {
+      background-color: #3dc5ac;
+      border-radius: 7px;
+      border-left: 30px solid #cccccc; }
+    .slideproductos .slideproductos_ul::-webkit-scrollbar-track {
+      background-color: #cccccc; }
 
 .tituloformularios {
-  font-family: akumal;
+  font-family: "akumal";
   font-size: 30px;
   text-align: center;
-  margin-top: 100px; }
+  margin-top: 30px; }
 
 .formularios {
   width: 90%;
@@ -643,3 +672,6 @@
           .contenedorPrincipalO .ofertas ul li img:hover {
             transform: scale(1.2);
             transition: 1s; }
+
+body {
+  font-family: akumal; }
