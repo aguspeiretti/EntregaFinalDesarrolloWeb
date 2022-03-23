@@ -107,6 +107,7 @@
 }
 
 .formularios {
+  font-family: $textFont;
   width: 90%;
   margin: auto;
   margin-top: 100px;
@@ -182,7 +183,7 @@
       .nombre_campos {
         margin-top: 10px;
         input {
-          margin-top: 10px;
+          margin-top: 0px;
           text-align: center;
           width: 300px;
           border-radius: 50px;
@@ -192,7 +193,7 @@
       .email_campos {
         margin-top: 10px;
         input {
-          margin-top: 10px;
+          margin-top: 0px;
           text-align: center;
           width: 300px;
           border-radius: 50px;
@@ -202,7 +203,7 @@
       .password_campos {
         margin-top: 10px;
         input {
-          margin-top: 10px;
+          margin-top: 0px;
           text-align: center;
           width: 300px;
           border-radius: 50px;

@@ -768,6 +768,7 @@
   margin-top: 30px; }
 
 .formularios {
+  font-family: akumal;
   width: 90%;
   margin: auto;
   margin-top: 100px;
@@ -832,7 +833,7 @@
       .formularios .c2 .campos .nombre_campos {
         margin-top: 10px; }
         .formularios .c2 .campos .nombre_campos input {
-          margin-top: 10px;
+          margin-top: 0px;
           text-align: center;
           width: 300px;
           border-radius: 50px;
@@ -840,7 +841,7 @@
       .formularios .c2 .campos .email_campos {
         margin-top: 10px; }
         .formularios .c2 .campos .email_campos input {
-          margin-top: 10px;
+          margin-top: 0px;
           text-align: center;
           width: 300px;
           border-radius: 50px;
@@ -848,7 +849,7 @@
       .formularios .c2 .campos .password_campos {
         margin-top: 10px; }
         .formularios .c2 .campos .password_campos input {
-          margin-top: 10px;
+          margin-top: 0px;
           text-align: center;
           width: 300px;
           border-radius: 50px;
@@ -1750,6 +1751,74 @@
     width: 150px; }
   .footer {
     margin-top: 400px; } }
+
+.mi-cuenta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
+  font-family: akumal;
+  color: #000; }
+  .mi-cuenta .campos-mi-cuenta {
+    width: 50%;
+    background-color: #000;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 15px;
+    margin-top: 20px; }
+    .mi-cuenta .campos-mi-cuenta .form1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+    .mi-cuenta .campos-mi-cuenta .email_mi-cuenta label {
+      font-size: 20px; }
+    .mi-cuenta .campos-mi-cuenta .email_mi-cuenta input {
+      margin-top: 15px;
+      height: 30px;
+      width: 300px;
+      border-radius: 10px; }
+    .mi-cuenta .campos-mi-cuenta .password_mi-cuenta label {
+      font-size: 20px; }
+    .mi-cuenta .campos-mi-cuenta .password_mi-cuenta input {
+      margin-top: 15px;
+      height: 30px;
+      width: 300px;
+      border-radius: 10px; }
+    .mi-cuenta .campos-mi-cuenta .boton_mi-cuenta input {
+      width: 100px;
+      border-radius: 15px;
+      background-color: #3dc5ac;
+      color: whitesmoke;
+      margin-top: 10px;
+      margin-left: 10px; }
+      .mi-cuenta .campos-mi-cuenta .boton_mi-cuenta input:hover {
+        color: #000; }
+
+.cajon {
+  width: 70%;
+  height: 400px;
+  background-color: rgba(211, 207, 207, 0.781);
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 15px; }
+  .cajon .productos-carrito {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    background-color: whitesmoke;
+    margin-top: 40px;
+    border-radius: 15px; }
+    .cajon .productos-carrito p {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-left: 30px; }
 
 body {
   font-family: akumal; }
