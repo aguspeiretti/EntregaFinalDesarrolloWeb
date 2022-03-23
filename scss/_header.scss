@@ -1,5 +1,6 @@
 @import "fuentes";
 @import "media";
+@import "variables";
 
 .navContainer {
   display: grid;
@@ -11,14 +12,14 @@
     "logo input iconos "
     "nav nav nav ";
   .griditems {
-    background-color: black;
+    background-color: $colorFondo;
   }
   .a0 {
     grid-area: head;
     color: #ffffff;
-    background-color: #3dc5ac;
+    background-color: $colorPrincipal;
     font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $textExtra;
     display: flex;
     text-align: center;
     align-items: center;
@@ -52,7 +53,7 @@
       font-family: akumal;
     }
     &::placeholder {
-      color: rgb(0, 0, 0);
+      color: $colorFondo;
     }
   }
   .a3 {
@@ -64,7 +65,7 @@
       text-decoration: none;
       transition: 0.3s;
       &:hover {
-        color: #3dc5ac;
+        color: $colorPrincipal;
       }
     }
 
@@ -111,19 +112,19 @@
 }
 .a4 {
   grid-area: nav;
-  border-top: 1px solid whitesmoke;
+  border-top: 1px solid $colorTexto;
   height: 50px;
   width: 100%;
   a {
-    color: white;
+    color: $colorTexto;
     font-size: 0.9rem;
     text-decoration: none;
     font-weight: bolder;
     letter-spacing: 2px;
-    font-family: akumal;
+    font-family: $textFont;
     transition: 0.4s;
     &:hover {
-      color: #3dc5ac;
+      color: $colorPrincipal;
     }
   }
   ul {
@@ -135,7 +136,7 @@
     padding: 20px;
     li {
       list-style: none;
-      color: white;
+      color: $colorTexto;
     }
   }
 }

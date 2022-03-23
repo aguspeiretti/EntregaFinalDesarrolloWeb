@@ -1,3 +1,5 @@
+@import "variables";
+
 @media screen and (max-width: 1280px) {
   .navContainer {
     display: grid;
@@ -22,136 +24,102 @@
   }
   .contenedorPrincipal {
     .mujer {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
+      @include media;
       ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
-        padding: 30px;
+        @include media1280-2;
       }
     }
   }
   .contenedorPrincipalH {
     .hombre {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
+      @include media;
       ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        padding: 30px;
+        @include media1280-2;
       }
     }
   }
   .contenedorPrincipalA {
     .accesorios {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
+      @include media;
       ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        padding: 30px;
-        li {
-          margin-left: -8px;
-        }
+        @include media1280-2;
+      }
+      li {
+        margin-left: -8px;
       }
     }
   }
-  .contenedorPrincipalO {
-    .ofertas {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
-      ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        padding: 30px;
-        li {
-          margin-left: -8px;
-        }
-      }
+}
+.contenedorPrincipalO {
+  .ofertas {
+    @include media;
+    ul {
+      @include media1280-2;
+    }
+    li {
+      margin-left: -8px;
     }
   }
 }
 
 @media screen and (max-width: 1100px) {
+  .navContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 70px 1fr 1fr;
+    width: 100%;
+
+    grid-template-areas:
+      "head head head "
+      "logo logo iconos "
+      "input input input "
+      "nav nav nav ";
+    .a2 {
+      display: flex;
+      justify-content: center;
+
+      .imput {
+        width: 80%;
+        margin-bottom: 10px;
+      }
+    }
+  }
   .contenedorPrincipal {
     .mujer {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
+      @include media;
       ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        padding: 30px;
+        @include media1110;
       }
     }
   }
   .contenedorPrincipalH {
     .hombre {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
+      @include media;
       ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        padding: 30px;
+        @include media1110;
       }
     }
   }
   .contenedorPrincipalA {
     .accesorios {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
+      @include media;
       ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        padding: 30px;
-        li {
-          margin-left: -8px;
-        }
+        @include media1110;
+      }
+      li {
+        margin-left: -8px;
       }
     }
   }
+
   .contenedorPrincipalO {
     .ofertas {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
+      @include media;
       ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        padding: 30px;
-        li {
-          margin-left: -8px;
-        }
+        @include media1110;
+      }
+      li {
+        margin-left: -8px;
       }
     }
   }
@@ -264,73 +232,48 @@
 
   .contenedorPrincipal {
     .mujer {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
+      @include media;
       ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        padding: 30px;
-        li {
-          margin-left: -8px;
-        }
+        @include media800;
+      }
+      li {
+        margin-left: -8px;
       }
     }
   }
+
   .contenedorPrincipalH {
     .hombre {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
+      @include media;
       ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        padding: 30px;
-        li {
-          margin-left: -8px;
-        }
+        @include media800;
+      }
+      li {
+        margin-left: -8px;
       }
     }
   }
+
   .contenedorPrincipalA {
     .accesorios {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
+      @include media;
       ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        padding: 30px;
-        li {
-          margin-left: -8px;
-        }
+        @include media800;
+      }
+      li {
+        margin-left: -8px;
       }
     }
   }
+
   .contenedorPrincipalO {
     .ofertas {
-      width: 90%;
-      background-color: rgba(211, 207, 207, 0.781);
-      margin: 0 auto;
-      border-radius: 15px;
-      margin-bottom: 30px;
+      @include media;
       ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        padding: 30px;
-        li {
-          margin-left: -8px;
-        }
+        @include media800;
+      }
+      li {
+        margin-left: -8px;
       }
     }
   }
@@ -340,7 +283,7 @@
   position: fixed;
   top: 185px;
   bottom: 0;
-  background: #000000;
+  background: $colorFondo;
   width: 100%;
   left: 0;
   display: flex;

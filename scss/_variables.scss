@@ -1,0 +1,33 @@
+$colorPrincipal: #3dc5ac;
+$colorFondo: #000;
+$colorCajas: rgba(211, 207, 207, 0.781);
+$colorTexto: whitesmoke;
+
+$textFont: akumal;
+$textExtra: banner;
+
+@mixin media {
+  width: 90%;
+  background-color: $colorCajas;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+@mixin media1280-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 30px;
+}
+@mixin media1110 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 30px;
+}
+@mixin media800 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 30px;
+}

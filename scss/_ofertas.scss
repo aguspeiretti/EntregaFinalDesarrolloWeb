@@ -1,7 +1,7 @@
 .ofertasTitulo {
   margin-top: 20px;
   text-align: center;
-  font-family: akumal;
+  font-family: $textFont;
 }
 .contenedorPrincipalO {
   display: grid;
@@ -11,7 +11,7 @@
   .contenedorFiltrosO {
     width: 90%;
     height: auto;
-    background-color: rgba(211, 207, 207, 0.781);
+    background-color: $colorCajas;
     margin-left: 50px;
     border-radius: 15px;
     margin-bottom: 30px;
@@ -62,7 +62,7 @@
   }
   .ofertas {
     width: 90%;
-    background-color: rgba(211, 207, 207, 0.781);
+    background-color: $colorCajas;
     margin: 0 auto;
     border-radius: 15px;
     margin-bottom: 30px;

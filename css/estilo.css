@@ -1,6 +1,6 @@
 @font-face {
   font-family: "banner";
-  src: url(../fuentes/Leon-Regular_TRIAL.ttf); }
+  src: url(/fuentes/leon.ttf); }
 
 @font-face {
   font-family: "akumal";
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "banner";
-  src: url(../fuentes/Leon-Regular_TRIAL.ttf); }
+  src: url(/fuentes/leon.ttf); }
 
 @font-face {
   font-family: "akumal";
@@ -46,7 +46,7 @@
     margin-bottom: 30px; }
     .contenedorPrincipalH .hombre ul {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
       justify-items: center;
       padding: 30px; }
   .contenedorPrincipalA .accesorios {
@@ -57,26 +57,39 @@
     margin-bottom: 30px; }
     .contenedorPrincipalA .accesorios ul {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalA .accesorios ul li {
-        margin-left: -8px; }
-  .contenedorPrincipalO .ofertas {
-    width: 90%;
-    background-color: rgba(211, 207, 207, 0.781);
-    margin: 0 auto;
-    border-radius: 15px;
-    margin-bottom: 30px; }
-    .contenedorPrincipalO .ofertas ul {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-items: center;
-      padding: 30px; }
-      .contenedorPrincipalO .ofertas ul li {
-        margin-left: -8px; } }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; } }
+
+.contenedorPrincipalO .ofertas {
+  width: 90%;
+  background-color: rgba(211, 207, 207, 0.781);
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 30px; }
+  .contenedorPrincipalO .ofertas ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 30px; }
+  .contenedorPrincipalO .ofertas li {
+    margin-left: -8px; }
 
 @media screen and (max-width: 1100px) {
+  .navContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 70px 1fr 1fr;
+    width: 100%;
+    grid-template-areas: "head head head " "logo logo iconos " "input input input " "nav nav nav "; }
+    .navContainer .a2 {
+      display: flex;
+      justify-content: center; }
+      .navContainer .a2 .imput {
+        width: 80%;
+        margin-bottom: 10px; }
   .contenedorPrincipal .mujer {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -96,7 +109,7 @@
     margin-bottom: 30px; }
     .contenedorPrincipalH .hombre ul {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       justify-items: center;
       padding: 30px; }
   .contenedorPrincipalA .accesorios {
@@ -110,8 +123,8 @@
       grid-template-columns: 1fr 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalA .accesorios ul li {
-        margin-left: -8px; }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; }
   .contenedorPrincipalO .ofertas {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -123,8 +136,8 @@
       grid-template-columns: 1fr 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalO .ofertas ul li {
-        margin-left: -8px; } }
+    .contenedorPrincipalO .ofertas li {
+      margin-left: -8px; } }
 
 @media screen and (max-width: 800px) {
   .navContainer {
@@ -203,8 +216,8 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipal .mujer ul li {
-        margin-left: -8px; }
+    .contenedorPrincipal .mujer li {
+      margin-left: -8px; }
   .contenedorPrincipalH .hombre {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -216,8 +229,8 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalH .hombre ul li {
-        margin-left: -8px; }
+    .contenedorPrincipalH .hombre li {
+      margin-left: -8px; }
   .contenedorPrincipalA .accesorios {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -229,8 +242,8 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalA .accesorios ul li {
-        margin-left: -8px; }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; }
   .contenedorPrincipalO .ofertas {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -242,14 +255,14 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalO .ofertas ul li {
-        margin-left: -8px; } }
+    .contenedorPrincipalO .ofertas li {
+      margin-left: -8px; } }
 
 .navMenu {
   position: fixed;
   top: 185px;
   bottom: 0;
-  background: #000000;
+  background: #000;
   width: 100%;
   left: 0;
   display: flex;
@@ -284,13 +297,13 @@
   width: 100%;
   grid-template-areas: "head head head" "logo input iconos " "nav nav nav "; }
   .navContainer .griditems {
-    background-color: black; }
+    background-color: #000; }
   .navContainer .a0 {
     grid-area: head;
     color: #ffffff;
     background-color: #3dc5ac;
     font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: banner;
     display: flex;
     text-align: center;
     align-items: center;
@@ -319,7 +332,7 @@
       border-radius: 15px;
       font-family: akumal; }
     .navContainer .a2::placeholder {
-      color: black; }
+      color: #000; }
   .navContainer .a3 {
     display: flex;
     align-items: center;
@@ -369,7 +382,7 @@
   height: 50px;
   width: 100%; }
   .a4 a {
-    color: white;
+    color: whitesmoke;
     font-size: 0.9rem;
     text-decoration: none;
     font-weight: bolder;
@@ -387,7 +400,7 @@
     padding: 20px; }
     .a4 ul li {
       list-style: none;
-      color: white; }
+      color: whitesmoke; }
 
 .navConteiner1 {
   display: none;
@@ -425,7 +438,7 @@
     margin-bottom: 30px; }
     .contenedorPrincipalH .hombre ul {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
       justify-items: center;
       padding: 30px; }
   .contenedorPrincipalA .accesorios {
@@ -436,26 +449,39 @@
     margin-bottom: 30px; }
     .contenedorPrincipalA .accesorios ul {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalA .accesorios ul li {
-        margin-left: -8px; }
-  .contenedorPrincipalO .ofertas {
-    width: 90%;
-    background-color: rgba(211, 207, 207, 0.781);
-    margin: 0 auto;
-    border-radius: 15px;
-    margin-bottom: 30px; }
-    .contenedorPrincipalO .ofertas ul {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-items: center;
-      padding: 30px; }
-      .contenedorPrincipalO .ofertas ul li {
-        margin-left: -8px; } }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; } }
+
+.contenedorPrincipalO .ofertas {
+  width: 90%;
+  background-color: rgba(211, 207, 207, 0.781);
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 30px; }
+  .contenedorPrincipalO .ofertas ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 30px; }
+  .contenedorPrincipalO .ofertas li {
+    margin-left: -8px; }
 
 @media screen and (max-width: 1100px) {
+  .navContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 70px 1fr 1fr;
+    width: 100%;
+    grid-template-areas: "head head head " "logo logo iconos " "input input input " "nav nav nav "; }
+    .navContainer .a2 {
+      display: flex;
+      justify-content: center; }
+      .navContainer .a2 .imput {
+        width: 80%;
+        margin-bottom: 10px; }
   .contenedorPrincipal .mujer {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -475,7 +501,7 @@
     margin-bottom: 30px; }
     .contenedorPrincipalH .hombre ul {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       justify-items: center;
       padding: 30px; }
   .contenedorPrincipalA .accesorios {
@@ -489,8 +515,8 @@
       grid-template-columns: 1fr 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalA .accesorios ul li {
-        margin-left: -8px; }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; }
   .contenedorPrincipalO .ofertas {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -502,8 +528,8 @@
       grid-template-columns: 1fr 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalO .ofertas ul li {
-        margin-left: -8px; } }
+    .contenedorPrincipalO .ofertas li {
+      margin-left: -8px; } }
 
 @media screen and (max-width: 800px) {
   .navContainer {
@@ -582,8 +608,8 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipal .mujer ul li {
-        margin-left: -8px; }
+    .contenedorPrincipal .mujer li {
+      margin-left: -8px; }
   .contenedorPrincipalH .hombre {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -595,8 +621,8 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalH .hombre ul li {
-        margin-left: -8px; }
+    .contenedorPrincipalH .hombre li {
+      margin-left: -8px; }
   .contenedorPrincipalA .accesorios {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -608,8 +634,8 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalA .accesorios ul li {
-        margin-left: -8px; }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; }
   .contenedorPrincipalO .ofertas {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -621,14 +647,14 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalO .ofertas ul li {
-        margin-left: -8px; } }
+    .contenedorPrincipalO .ofertas li {
+      margin-left: -8px; } }
 
 .navMenu {
   position: fixed;
   top: 185px;
   bottom: 0;
-  background: #000000;
+  background: #000;
   width: 100%;
   left: 0;
   display: flex;
@@ -730,38 +756,13 @@
     justify-content: center; }
 
 .tituloslide {
-  font-family: "akumal";
+  font-family: akumal;
   font-size: 30px;
   text-align: center;
   margin-top: 100px; }
 
-.slideproductos {
-  width: 75%;
-  border-radius: 15px;
-  height: 100%;
-  margin: auto;
-  margin-top: 100px;
-  overflow: auto; }
-  .slideproductos .slideproductos_ul {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    column-gap: 20px; }
-    .slideproductos .slideproductos_ul li {
-      list-style: none; }
-      .slideproductos .slideproductos_ul li img {
-        height: 200px;
-        border-radius: 15px; }
-    .slideproductos .slideproductos_ul::-webkit-scrollbar {
-      height: 7px; }
-    .slideproductos .slideproductos_ul::-webkit-scrollbar-thumb {
-      background-color: #3dc5ac;
-      border-radius: 7px;
-      border-left: 30px solid #cccccc; }
-    .slideproductos .slideproductos_ul::-webkit-scrollbar-track {
-      background-color: #cccccc; }
-
 .tituloformularios {
-  font-family: "akumal";
+  font-family: akumal;
   font-size: 30px;
   text-align: center;
   margin-top: 30px; }
@@ -779,7 +780,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: whitesmoke;
-    background-color: black;
+    background-color: #000;
     border-radius: 15px; }
     .formularios .c1 .izquierdo {
       display: flex;
@@ -810,14 +811,14 @@
         background-color: #3dc5ac;
         color: whitesmoke; }
         .formularios .c1 .derecho .boton:hover {
-          color: black; }
+          color: #000; }
   .formularios .c2 {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #000;
     border-radius: 15px; }
     .formularios .c2 .formulario_h2 {
       text-align: center; }
@@ -860,7 +861,7 @@
         margin-top: 10px;
         margin-left: 10px; }
         .formularios .c2 .campos .boton_campos input:hover {
-          color: black; }
+          color: #000; }
 
 .footer {
   display: grid;
@@ -891,6 +892,282 @@
     .footer .redes a {
       text-decoration: none;
       color: black; }
+
+@media screen and (max-width: 1280px) {
+  .navContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 70px 1fr 1fr;
+    width: 100%;
+    grid-template-areas: "head head head " "logo logo iconos " "input input input " "nav nav nav "; }
+    .navContainer .a2 {
+      display: flex;
+      justify-content: center; }
+      .navContainer .a2 .imput {
+        width: 80%;
+        margin-bottom: 10px; }
+  .contenedorPrincipal .mujer {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipal .mujer ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      padding: 30px; }
+  .contenedorPrincipalH .hombre {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipalH .hombre ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      padding: 30px; }
+  .contenedorPrincipalA .accesorios {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipalA .accesorios ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      padding: 30px; }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; } }
+
+.contenedorPrincipalO .ofertas {
+  width: 90%;
+  background-color: rgba(211, 207, 207, 0.781);
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 30px; }
+  .contenedorPrincipalO .ofertas ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 30px; }
+  .contenedorPrincipalO .ofertas li {
+    margin-left: -8px; }
+
+@media screen and (max-width: 1100px) {
+  .navContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 70px 1fr 1fr;
+    width: 100%;
+    grid-template-areas: "head head head " "logo logo iconos " "input input input " "nav nav nav "; }
+    .navContainer .a2 {
+      display: flex;
+      justify-content: center; }
+      .navContainer .a2 .imput {
+        width: 80%;
+        margin-bottom: 10px; }
+  .contenedorPrincipal .mujer {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipal .mujer ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      padding: 30px; }
+  .contenedorPrincipalH .hombre {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipalH .hombre ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      padding: 30px; }
+  .contenedorPrincipalA .accesorios {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipalA .accesorios ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      padding: 30px; }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; }
+  .contenedorPrincipalO .ofertas {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipalO .ofertas ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      padding: 30px; }
+    .contenedorPrincipalO .ofertas li {
+      margin-left: -8px; } }
+
+@media screen and (max-width: 800px) {
+  .navContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 100px 1fr;
+    grid-template-areas: "head head head " "logo logo iconos " "input input input " "nav nav nav "; }
+    .navContainer .bannerGris {
+      margin-top: 0px;
+      overflow: hidden; }
+      .navContainer .bannerGris img {
+        width: 200%; }
+    .navContainer .iconoContainer {
+      justify-content: end;
+      width: 80px; }
+      .navContainer .iconoContainer .icono_1,
+      .navContainer .iconoContainer .icono_3 {
+        display: none; }
+      .navContainer .iconoContainer .a0 {
+        font-size: 10px; }
+    .navContainer .a1 {
+      justify-content: end; }
+      .navContainer .a1 img {
+        width: 200px;
+        margin-left: 20px; }
+      .navContainer .a1 .a2 {
+        height: 90px; }
+      .navContainer .a1 .slide {
+        width: 100%; }
+      .navContainer .a1 .a3 {
+        justify-content: center; }
+  .a4 {
+    display: none;
+    font-weight: lighter;
+    letter-spacing: 0; }
+  .atajosGrid {
+    margin-top: 40px;
+    grid-template-columns: 1fr; }
+  .formularios {
+    grid-template-columns: auto; }
+    .formularios .c1 {
+      grid-template-columns: 1fr; }
+  .footer {
+    grid-template-columns: auto;
+    margin-top: 300px; }
+  .navConteiner1 {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 30px; }
+    .navConteiner1 .navInput {
+      display: none; }
+  .contenedorPrincipal {
+    grid-template-columns: 90%; }
+    .contenedorPrincipal .contenedorFiltros {
+      display: none; }
+  .contenedorPrincipalH {
+    grid-template-columns: 90%; }
+    .contenedorPrincipalH .contenedorFiltrosH {
+      display: none; }
+  .contenedorPrincipalA {
+    grid-template-columns: 90%; }
+    .contenedorPrincipalA .contenedorFiltrosA {
+      display: none; }
+  .contenedorPrincipalO {
+    grid-template-columns: 90%; }
+    .contenedorPrincipalO .contenedorFiltrosO {
+      display: none; }
+  .contenedorPrincipal .mujer {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipal .mujer ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      padding: 30px; }
+    .contenedorPrincipal .mujer li {
+      margin-left: -8px; }
+  .contenedorPrincipalH .hombre {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipalH .hombre ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      padding: 30px; }
+    .contenedorPrincipalH .hombre li {
+      margin-left: -8px; }
+  .contenedorPrincipalA .accesorios {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipalA .accesorios ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      padding: 30px; }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; }
+  .contenedorPrincipalO .ofertas {
+    width: 90%;
+    background-color: rgba(211, 207, 207, 0.781);
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 30px; }
+    .contenedorPrincipalO .ofertas ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      padding: 30px; }
+    .contenedorPrincipalO .ofertas li {
+      margin-left: -8px; } }
+
+.navMenu {
+  position: fixed;
+  top: 185px;
+  bottom: 0;
+  background: #000;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  clip-path: circle(0 at center);
+  transition: clip-path 1s ease-in-out; }
+  .navMenu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: akumal;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5rem;
+    height: 20%; }
+
+.navInput:checked + .navMenu {
+  clip-path: circle(100% at center); }
+
+@media screen and (max-width: 510px) {
+  .a1 img {
+    width: 150px; }
+  .footer {
+    margin-top: 400px; } }
 
 .mujerTitulo {
   margin-top: 20px;
@@ -1230,7 +1507,7 @@
     margin-bottom: 30px; }
     .contenedorPrincipalH .hombre ul {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
       justify-items: center;
       padding: 30px; }
   .contenedorPrincipalA .accesorios {
@@ -1241,26 +1518,39 @@
     margin-bottom: 30px; }
     .contenedorPrincipalA .accesorios ul {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalA .accesorios ul li {
-        margin-left: -8px; }
-  .contenedorPrincipalO .ofertas {
-    width: 90%;
-    background-color: rgba(211, 207, 207, 0.781);
-    margin: 0 auto;
-    border-radius: 15px;
-    margin-bottom: 30px; }
-    .contenedorPrincipalO .ofertas ul {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-items: center;
-      padding: 30px; }
-      .contenedorPrincipalO .ofertas ul li {
-        margin-left: -8px; } }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; } }
+
+.contenedorPrincipalO .ofertas {
+  width: 90%;
+  background-color: rgba(211, 207, 207, 0.781);
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 30px; }
+  .contenedorPrincipalO .ofertas ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 30px; }
+  .contenedorPrincipalO .ofertas li {
+    margin-left: -8px; }
 
 @media screen and (max-width: 1100px) {
+  .navContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 70px 1fr 1fr;
+    width: 100%;
+    grid-template-areas: "head head head " "logo logo iconos " "input input input " "nav nav nav "; }
+    .navContainer .a2 {
+      display: flex;
+      justify-content: center; }
+      .navContainer .a2 .imput {
+        width: 80%;
+        margin-bottom: 10px; }
   .contenedorPrincipal .mujer {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -1280,7 +1570,7 @@
     margin-bottom: 30px; }
     .contenedorPrincipalH .hombre ul {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       justify-items: center;
       padding: 30px; }
   .contenedorPrincipalA .accesorios {
@@ -1294,8 +1584,8 @@
       grid-template-columns: 1fr 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalA .accesorios ul li {
-        margin-left: -8px; }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; }
   .contenedorPrincipalO .ofertas {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -1307,8 +1597,8 @@
       grid-template-columns: 1fr 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalO .ofertas ul li {
-        margin-left: -8px; } }
+    .contenedorPrincipalO .ofertas li {
+      margin-left: -8px; } }
 
 @media screen and (max-width: 800px) {
   .navContainer {
@@ -1387,8 +1677,8 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipal .mujer ul li {
-        margin-left: -8px; }
+    .contenedorPrincipal .mujer li {
+      margin-left: -8px; }
   .contenedorPrincipalH .hombre {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -1400,8 +1690,8 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalH .hombre ul li {
-        margin-left: -8px; }
+    .contenedorPrincipalH .hombre li {
+      margin-left: -8px; }
   .contenedorPrincipalA .accesorios {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -1413,8 +1703,8 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalA .accesorios ul li {
-        margin-left: -8px; }
+    .contenedorPrincipalA .accesorios li {
+      margin-left: -8px; }
   .contenedorPrincipalO .ofertas {
     width: 90%;
     background-color: rgba(211, 207, 207, 0.781);
@@ -1426,14 +1716,14 @@
       grid-template-columns: 1fr;
       justify-items: center;
       padding: 30px; }
-      .contenedorPrincipalO .ofertas ul li {
-        margin-left: -8px; } }
+    .contenedorPrincipalO .ofertas li {
+      margin-left: -8px; } }
 
 .navMenu {
   position: fixed;
   top: 185px;
   bottom: 0;
-  background: #000000;
+  background: #000;
   width: 100%;
   left: 0;
   display: flex;
