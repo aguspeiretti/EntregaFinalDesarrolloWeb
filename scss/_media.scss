@@ -13,197 +13,343 @@
     .a2 {
       display: flex;
       justify-content: center;
+
       .imput {
         width: 80%;
         margin-bottom: 10px;
       }
     }
   }
-
-  .a2 .mujer ul {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-  }
-  .hombre ul {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-  }
-  .accesorios ul {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-  }
-  .ofertas ul {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-  }
-
-  @media screen and (max-width: 1100px) {
-    .mujer ul {
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-    }
-    .hombre ul {
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-    }
-    .accesorios ul {
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-    }
-    .ofertas ul {
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-    }
-  }
-
-  @media screen and (max-width: 800px) {
-    .navContainer {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 30px 100px 1fr;
-
-      grid-template-areas:
-        "head head head "
-        "logo logo iconos "
-        "input input input "
-        "nav nav nav ";
-      .bannerGris {
-        margin-top: 0px;
-        overflow: hidden;
-        img {
-          width: 200%;
-        }
+  .contenedorPrincipal {
+    .mujer {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        padding: 30px;
       }
-      .iconoContainer {
-        justify-content: end;
-        width: 80px;
-        .icono_1,
-        .icono_3 {
-          display: none;
-        }
-        .a0 {
-          font-size: 10px;
-        }
+    }
+  }
+  .contenedorPrincipalH {
+    .hombre {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding: 30px;
       }
-      .a1 {
-        justify-content: end;
-        img {
-          width: 200px;
-          margin-left: 20px;
-        }
-        .a2 {
-          height: 90px;
-        }
-        .slide {
-          width: 100%;
-        }
-        .a3 {
-          justify-content: center;
+    }
+  }
+  .contenedorPrincipalA {
+    .accesorios {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding: 30px;
+        li {
+          margin-left: -8px;
         }
       }
     }
-    .a4 {
-      display: none;
-      font-weight: lighter;
-      letter-spacing: 0;
-    }
-    .atajosGrid {
-      margin-top: 40px;
-      grid-template-columns: 1fr;
-    }
-
-    .formularios {
-      grid-template-columns: auto;
-      .c1 {
-        grid-template-columns: 1fr;
+  }
+  .contenedorPrincipalO {
+    .ofertas {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding: 30px;
+        li {
+          margin-left: -8px;
+        }
       }
     }
+  }
+}
 
-    .footer {
-      grid-template-columns: auto;
-      margin-top: 300px;
+@media screen and (max-width: 1100px) {
+  .contenedorPrincipal {
+    .mujer {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding: 30px;
+      }
     }
+  }
+  .contenedorPrincipalH {
+    .hombre {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        padding: 30px;
+      }
+    }
+  }
+  .contenedorPrincipalA {
+    .accesorios {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding: 30px;
+        li {
+          margin-left: -8px;
+        }
+      }
+    }
+  }
+  .contenedorPrincipalO {
+    .ofertas {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding: 30px;
+        li {
+          margin-left: -8px;
+        }
+      }
+    }
+  }
+}
 
-    .navConteiner1 {
-      display: block;
-      position: absolute;
-      top: 60px;
-      left: 30px;
-      .navInput {
+@media screen and (max-width: 800px) {
+  .navContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 100px 1fr;
+
+    grid-template-areas:
+      "head head head "
+      "logo logo iconos "
+      "input input input "
+      "nav nav nav ";
+    .bannerGris {
+      margin-top: 0px;
+      overflow: hidden;
+      img {
+        width: 200%;
+      }
+    }
+    .iconoContainer {
+      justify-content: end;
+      width: 80px;
+      .icono_1,
+      .icono_3 {
         display: none;
       }
+      .a0 {
+        font-size: 10px;
+      }
     }
+    .a1 {
+      justify-content: end;
+      img {
+        width: 200px;
+        margin-left: 20px;
+      }
+      .a2 {
+        height: 90px;
+      }
+      .slide {
+        width: 100%;
+      }
+      .a3 {
+        justify-content: center;
+      }
+    }
+  }
+  .a4 {
+    display: none;
+    font-weight: lighter;
+    letter-spacing: 0;
+  }
+  .atajosGrid {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+  }
 
-    .contenedorPrincipal {
-      grid-template-columns: 90%;
+  .formularios {
+    grid-template-columns: auto;
+    .c1 {
+      grid-template-columns: 1fr;
     }
+  }
+
+  .footer {
+    grid-template-columns: auto;
+    margin-top: 300px;
+  }
+
+  .navConteiner1 {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    .navInput {
+      display: none;
+    }
+  }
+
+  .contenedorPrincipal {
+    grid-template-columns: 90%;
     .contenedorFiltros {
       display: none;
     }
-    .contenedorPrincipalH {
-      grid-template-columns: 90%;
-    }
+  }
+
+  .contenedorPrincipalH {
+    grid-template-columns: 90%;
     .contenedorFiltrosH {
       display: none;
     }
-    .contenedorPrincipalA {
-      grid-template-columns: 90%;
-    }
+  }
+
+  .contenedorPrincipalA {
+    grid-template-columns: 90%;
     .contenedorFiltrosA {
       display: none;
     }
-    .contenedorPrincipalO {
-      grid-template-columns: 90%;
-    }
+  }
+
+  .contenedorPrincipalO {
+    grid-template-columns: 90%;
     .contenedorFiltrosO {
       display: none;
     }
-    .mujer ul {
-      grid-template-columns: 1fr;
-      justify-items: center;
-      li {
-        margin-left: -8px;
+  }
+
+  .contenedorPrincipal {
+    .mujer {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 30px;
+        li {
+          margin-left: -8px;
+        }
       }
     }
   }
-  .hombre ul {
-    grid-template-columns: 1fr;
-    justify-items: center;
+  .contenedorPrincipalH {
+    .hombre {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 30px;
+        li {
+          margin-left: -8px;
+        }
+      }
+    }
   }
+  .contenedorPrincipalA {
+    .accesorios {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 30px;
+        li {
+          margin-left: -8px;
+        }
+      }
+    }
+  }
+  .contenedorPrincipalO {
+    .ofertas {
+      width: 90%;
+      background-color: rgba(211, 207, 207, 0.781);
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 30px;
+        li {
+          margin-left: -8px;
+        }
+      }
+    }
+  }
+}
 
-  .hombre ul li {
-    margin-left: -8px;
-  }
-  .accesorios ul {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .accesorios ul li {
-    margin-left: -8px;
-  }
-  .ofertas ul {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .ofertas ul li {
-    margin-left: -8px;
-  }
-  .navMenu {
-    position: fixed;
-    top: 220px;
-    bottom: 0;
-    background: #000000;
-    width: 100%;
-    left: 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    text-align: center;
-    clip-path: circle(0 at center);
-    transition: clip-path 1s ease-in-out;
-  }
-  .navMenu a {
+.navMenu {
+  position: fixed;
+  top: 185px;
+  bottom: 0;
+  background: #000000;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  clip-path: circle(0 at center);
+  transition: clip-path 1s ease-in-out;
+  a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,11 +359,11 @@
     font-size: 1.5rem;
     height: 20%;
   }
-
-  .navInput:checked + .navMenu {
-    clip-path: circle(100% at center);
-  }
 }
+.navInput:checked + .navMenu {
+  clip-path: circle(100% at center);
+}
+
 @media screen and (max-width: 510px) {
   .a1 img {
     width: 150px;
