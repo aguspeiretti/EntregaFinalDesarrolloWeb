@@ -29,33 +29,38 @@
       height: 300px;
       .color {
         display: grid;
-        grid-template-rows: 1fr 20fr;
+        grid-template-rows: 1fr 4fr;
+        margin-top: 10px;
         .colores {
           display: flex;
           flex-direction: column;
-          justify-content: space-evenly;
+          justify-content: start;
           margin-left: 10px;
+          height: 300px;
         }
       }
       .chaqueta {
         display: grid;
-        grid-template-rows: 1fr 20fr;
+        grid-template-rows: 1fr 4fr;
+        margin-top: 20px;
         .chaquetas {
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
           margin-left: 10px;
+          height: 300px;
         }
       }
       .pantalon {
         display: grid;
-        grid-template-rows: 1fr 20fr;
+        grid-template-rows: 1fr 4fr;
         height: 500px;
         .pantalones {
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
           margin-left: 10px;
+          height: 300px;
         }
       }
     }

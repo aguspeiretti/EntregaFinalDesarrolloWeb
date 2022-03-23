@@ -1,0 +1,29 @@
+@import "variables";
+
+.sectionMapa {
+  margin: 0 auto;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 60px;
+  justify-content: center;
+  align-content: center;
+  font-family: $textFont;
+  .boxMapa {
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: $colorCajas;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-content: center;
+  }
+  .mapa {
+    margin: 0 auto;
+  }
+}
