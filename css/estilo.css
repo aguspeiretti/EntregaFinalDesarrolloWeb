@@ -14,6 +14,14 @@
   font-family: "akumal";
   src: url(/fuentes/akumal.ttf); }
 
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
+
 @media screen and (max-width: 1280px) {
   .navContainer {
     display: grid;
@@ -289,6 +297,14 @@
     width: 150px; }
   .footer {
     margin-top: 400px; } }
+
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
 
 .navContainer {
   display: grid;
@@ -408,6 +424,14 @@
   display: none;
   grid-area: bar; }
 
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
+
 @media screen and (max-width: 1280px) {
   .navContainer {
     display: grid;
@@ -683,6 +707,14 @@
     width: 150px; }
   .footer {
     margin-top: 400px; } }
+
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
 
 .btnWsp {
   position: fixed;
@@ -906,6 +938,14 @@
   .atajosg h2 {
     margin: 0 auto; }
 
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
+
 .footer {
   display: grid;
   width: 100%;
@@ -935,6 +975,22 @@
     .footer .redes a {
       text-decoration: none;
       color: black; }
+
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
+
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
 
 @media screen and (max-width: 1280px) {
   .navContainer {
@@ -1291,6 +1347,14 @@
             transform: scale(1.2);
             transition: 1s; }
 
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
+
 .hombreTitulo {
   margin-top: 20px;
   text-align: center;
@@ -1367,6 +1431,14 @@
           .contenedorPrincipalH .hombre ul li img:hover {
             transform: scale(1.2);
             transition: 1s; }
+
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
 
 .accesoriosTitulo {
   margin-top: 20px;
@@ -1522,6 +1594,14 @@
           .contenedorPrincipalO .ofertas ul li img:hover {
             transform: scale(1.2);
             transition: 1s; }
+
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
 
 @media screen and (max-width: 1280px) {
   .navContainer {
@@ -1799,6 +1879,22 @@
   .footer {
     margin-top: 400px; } }
 
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
+
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
+
 .mi-cuenta {
   display: flex;
   flex-direction: column;
@@ -1847,6 +1943,14 @@
       .mi-cuenta .campos-mi-cuenta .boton_mi-cuenta input:hover {
         color: #000; }
 
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
+
 .cajon {
   width: 70%;
   height: 400px;
@@ -1866,6 +1970,14 @@
       font-size: 20px;
       margin-top: 30px;
       margin-left: 30px; }
+
+@font-face {
+  font-family: akumal;
+  src: url(../fuentes/akumal.ttf); }
+
+@font-face {
+  font-family: banner;
+  src: url(../fuentes/leon.ttf); }
 
 .sectionMapa {
   margin: 0 auto;
