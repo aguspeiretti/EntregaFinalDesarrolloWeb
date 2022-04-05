@@ -161,7 +161,7 @@
       justify-content: end;
       width: 80px; }
       .navContainer .iconoContainer .icono_1,
-      .navContainer .iconoContainer .icono_3 {
+      .navContainer .iconoContainer .icono_2 {
         display: none; }
       .navContainer .iconoContainer .a0 {
         font-size: 10px; }
@@ -279,6 +279,8 @@
   text-align: center;
   clip-path: circle(0 at center);
   transition: clip-path 1s ease-in-out; }
+  .navMenu .ico {
+    padding-right: 10px; }
   .navMenu a {
     display: flex;
     align-items: center;
@@ -297,6 +299,15 @@
     width: 150px; }
   .footer {
     margin-top: 400px; } }
+
+@media screen and (max-width: 420px) {
+  .navContainer {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 30px 100px 1fr; }
+    .navContainer .a1 img {
+      width: 150px; }
+  .footer {
+    margin-top: 520px; } }
 
 @font-face {
   font-family: akumal;
@@ -571,7 +582,7 @@
       justify-content: end;
       width: 80px; }
       .navContainer .iconoContainer .icono_1,
-      .navContainer .iconoContainer .icono_3 {
+      .navContainer .iconoContainer .icono_2 {
         display: none; }
       .navContainer .iconoContainer .a0 {
         font-size: 10px; }
@@ -689,6 +700,8 @@
   text-align: center;
   clip-path: circle(0 at center);
   transition: clip-path 1s ease-in-out; }
+  .navMenu .ico {
+    padding-right: 10px; }
   .navMenu a {
     display: flex;
     align-items: center;
@@ -707,6 +720,15 @@
     width: 150px; }
   .footer {
     margin-top: 400px; } }
+
+@media screen and (max-width: 420px) {
+  .navContainer {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 30px 100px 1fr; }
+    .navContainer .a1 img {
+      width: 150px; }
+  .footer {
+    margin-top: 520px; } }
 
 @font-face {
   font-family: akumal;
@@ -1131,7 +1153,7 @@
       justify-content: end;
       width: 80px; }
       .navContainer .iconoContainer .icono_1,
-      .navContainer .iconoContainer .icono_3 {
+      .navContainer .iconoContainer .icono_2 {
         display: none; }
       .navContainer .iconoContainer .a0 {
         font-size: 10px; }
@@ -1249,6 +1271,8 @@
   text-align: center;
   clip-path: circle(0 at center);
   transition: clip-path 1s ease-in-out; }
+  .navMenu .ico {
+    padding-right: 10px; }
   .navMenu a {
     display: flex;
     align-items: center;
@@ -1267,6 +1291,15 @@
     width: 150px; }
   .footer {
     margin-top: 400px; } }
+
+@media screen and (max-width: 420px) {
+  .navContainer {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 30px 100px 1fr; }
+    .navContainer .a1 img {
+      width: 150px; }
+  .footer {
+    margin-top: 520px; } }
 
 .mujerTitulo {
   margin-top: 20px;
@@ -1392,16 +1425,20 @@
       .contenedorPrincipalH .contenedorFiltrosH .filtrosH .chaquetaH {
         display: grid;
         grid-template-rows: 1fr 4fr; }
+        .contenedorPrincipalH .contenedorFiltrosH .filtrosH .chaquetaH h2 {
+          padding-top: 20px; }
         .contenedorPrincipalH .contenedorFiltrosH .filtrosH .chaquetaH .chaquetasH {
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
           margin-left: 10px;
+          margin-top: 20px;
           height: 300px; }
       .contenedorPrincipalH .contenedorFiltrosH .filtrosH .pantalonH {
         display: grid;
         grid-template-rows: 1fr 4fr;
-        height: 500px; }
+        height: 300px;
+        margin-top: -90px; }
         .contenedorPrincipalH .contenedorFiltrosH .filtrosH .pantalonH .pantalonesH {
           display: flex;
           flex-direction: column;
@@ -1460,7 +1497,8 @@
     display: grid;
     grid-template-rows: 1fr 20fr; }
     .contenedorPrincipalA .contenedorFiltrosA .contenedorFiltrosA h2 {
-      margin-left: 10px; }
+      margin-left: 10px;
+      padding-left: 10px; }
     .contenedorPrincipalA .contenedorFiltrosA .filtrosA {
       display: flex;
       flex-direction: column;
@@ -1468,6 +1506,8 @@
       .contenedorPrincipalA .contenedorFiltrosA .filtrosA .colorA {
         display: grid;
         grid-template-rows: 1fr 4fr; }
+        .contenedorPrincipalA .contenedorFiltrosA .filtrosA .colorA h2 {
+          padding-left: 10px; }
       .contenedorPrincipalA .contenedorFiltrosA .filtrosA .coloresA {
         display: flex;
         flex-direction: column;
@@ -1476,7 +1516,10 @@
         height: 300px; }
       .contenedorPrincipalA .contenedorFiltrosA .filtrosA .chaquetaA {
         display: grid;
-        grid-template-rows: 1fr 4fr; }
+        grid-template-rows: 1fr 4fr;
+        padding-left: 10px; }
+        .contenedorPrincipalA .contenedorFiltrosA .filtrosA .chaquetaA h2 {
+          padding-top: 30px; }
       .contenedorPrincipalA .contenedorFiltrosA .filtrosA .chaquetasA {
         display: flex;
         flex-direction: column;
@@ -1486,7 +1529,10 @@
       .contenedorPrincipalA .contenedorFiltrosA .filtrosA .pantalonA {
         display: grid;
         grid-template-rows: 1fr 4fr;
-        height: 500px; }
+        height: 400px;
+        margin-top: -150px; }
+        .contenedorPrincipalA .contenedorFiltrosA .filtrosA .pantalonA h2 {
+          padding-left: 10px; }
       .contenedorPrincipalA .contenedorFiltrosA .filtrosA .pantalonesA {
         display: flex;
         flex-direction: column;
@@ -1536,7 +1582,8 @@
     border-radius: 15px;
     margin-bottom: 30px;
     display: grid;
-    grid-template-rows: 1fr 20fr; }
+    grid-template-rows: 1fr 20fr;
+    padding-left: 10px; }
     .contenedorPrincipalO .contenedorFiltrosO .contenedorFiltrosO h2 {
       margin-left: 10px; }
     .contenedorPrincipalO .contenedorFiltrosO .filtrosO {
@@ -1555,6 +1602,8 @@
       .contenedorPrincipalO .contenedorFiltrosO .filtrosO .chaquetaO {
         display: grid;
         grid-template-rows: 1fr 4fr; }
+        .contenedorPrincipalO .contenedorFiltrosO .filtrosO .chaquetaO h2 {
+          padding-top: 50px; }
       .contenedorPrincipalO .contenedorFiltrosO .filtrosO .chaquetasO {
         display: flex;
         flex-direction: column;
@@ -1564,7 +1613,8 @@
       .contenedorPrincipalO .contenedorFiltrosO .filtrosO .pantalonO {
         display: grid;
         grid-template-rows: 1fr 4fr;
-        height: 500px; }
+        height: 500px;
+        margin-top: -100px; }
       .contenedorPrincipalO .contenedorFiltrosO .filtrosO .pantalonesO {
         display: flex;
         flex-direction: column;
@@ -1742,7 +1792,7 @@
       justify-content: end;
       width: 80px; }
       .navContainer .iconoContainer .icono_1,
-      .navContainer .iconoContainer .icono_3 {
+      .navContainer .iconoContainer .icono_2 {
         display: none; }
       .navContainer .iconoContainer .a0 {
         font-size: 10px; }
@@ -1860,6 +1910,8 @@
   text-align: center;
   clip-path: circle(0 at center);
   transition: clip-path 1s ease-in-out; }
+  .navMenu .ico {
+    padding-right: 10px; }
   .navMenu a {
     display: flex;
     align-items: center;
@@ -1878,6 +1930,15 @@
     width: 150px; }
   .footer {
     margin-top: 400px; } }
+
+@media screen and (max-width: 420px) {
+  .navContainer {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 30px 100px 1fr; }
+    .navContainer .a1 img {
+      width: 150px; }
+  .footer {
+    margin-top: 520px; } }
 
 @font-face {
   font-family: akumal;

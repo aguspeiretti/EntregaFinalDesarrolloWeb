@@ -21,6 +21,7 @@
     grid-template-rows: 1fr 20fr;
     .contenedorFiltrosA h2 {
       margin-left: 10px;
+      padding-left: 10px;
     }
     .filtrosA {
       display: flex;
@@ -29,6 +30,9 @@
       .colorA {
         display: grid;
         grid-template-rows: 1fr 4fr;
+        h2{
+          padding-left: 10px;
+        }
       }
       .coloresA {
         display: flex;
@@ -40,6 +44,10 @@
       .chaquetaA {
         display: grid;
         grid-template-rows: 1fr 4fr;
+        padding-left: 10px;
+        h2{
+          padding-top: 30px;
+        }
       }
       .chaquetasA {
         display: flex;
@@ -51,7 +59,11 @@
       .pantalonA {
         display: grid;
         grid-template-rows: 1fr 4fr;
-        height: 500px;
+        height: 400px;
+        margin-top: -150px;
+        h2{
+          padding-left: 10px;
+        }
       }
       .pantalonesA {
         display: flex;

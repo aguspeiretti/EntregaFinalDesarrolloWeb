@@ -146,7 +146,7 @@
       justify-content: end;
       width: 80px;
       .icono_1,
-      .icono_3 {
+      .icono_2 {
         display: none;
       }
       .a0 {
@@ -292,6 +292,9 @@
   text-align: center;
   clip-path: circle(0 at center);
   transition: clip-path 1s ease-in-out;
+  .ico{
+    padding-right: 10px;
+  }
   a {
     display: flex;
     align-items: center;
@@ -313,5 +316,20 @@
   }
   .footer {
     margin-top: 400px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .navContainer {
+    grid-template-columns:  3fr 1fr;
+    grid-template-rows: 30px 100px 1fr;
+    
+    .a1{
+      img{
+        width: 150px;
+      }
+    }
+  }
+  .footer{
+    margin-top: 520px;
   }
 }

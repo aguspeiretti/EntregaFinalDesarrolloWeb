@@ -17,8 +17,10 @@
     margin-bottom: 30px;
     display: grid;
     grid-template-rows: 1fr 20fr;
+    padding-left: 10px;
     .contenedorFiltrosO h2 {
       margin-left: 10px;
+      
     }
     .filtrosO {
       display: flex;
@@ -38,6 +40,9 @@
       .chaquetaO {
         display: grid;
         grid-template-rows: 1fr 4fr;
+        h2{
+          padding-top: 50px;
+        }
       }
       .chaquetasO {
         display: flex;
@@ -50,6 +55,7 @@
         display: grid;
         grid-template-rows: 1fr 4fr;
         height: 500px;
+        margin-top: -100px;
       }
       .pantalonesO {
         display: flex;
