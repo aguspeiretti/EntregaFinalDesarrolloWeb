@@ -163,6 +163,8 @@
       .navContainer .iconoContainer .icono_1,
       .navContainer .iconoContainer .icono_2 {
         display: none; }
+      .navContainer .iconoContainer .icono_3 {
+        margin-right: 10px; }
       .navContainer .iconoContainer .a0 {
         font-size: 10px; }
     .navContainer .a1 {
@@ -180,8 +182,12 @@
     display: none;
     font-weight: lighter;
     letter-spacing: 0; }
+  .slide {
+    margin-top: 40px; }
+  .bannerGris {
+    margin-top: 0px; }
   .atajosGrid {
-    margin-top: 40px;
+    margin-top: 20px;
     grid-template-columns: 1fr; }
   .formularios {
     grid-template-columns: auto; }
@@ -192,7 +198,7 @@
     margin-top: 300px; }
   .navConteiner1 {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 30px;
     z-index: 100; }
@@ -267,12 +273,17 @@
     .contenedorPrincipalO .ofertas li {
       margin-left: -8px; } }
 
+.navLabel {
+  position: fixed;
+  z-index: 200; }
+
 .navMenu {
   position: fixed;
-  top: 185px;
+  top: 0px;
   bottom: 0;
   background: #000;
   width: 100%;
+  height: 100vh;
   left: 0;
   display: flex;
   justify-content: space-evenly;
@@ -591,6 +602,8 @@
       .navContainer .iconoContainer .icono_1,
       .navContainer .iconoContainer .icono_2 {
         display: none; }
+      .navContainer .iconoContainer .icono_3 {
+        margin-right: 10px; }
       .navContainer .iconoContainer .a0 {
         font-size: 10px; }
     .navContainer .a1 {
@@ -608,8 +621,12 @@
     display: none;
     font-weight: lighter;
     letter-spacing: 0; }
+  .slide {
+    margin-top: 40px; }
+  .bannerGris {
+    margin-top: 0px; }
   .atajosGrid {
-    margin-top: 40px;
+    margin-top: 20px;
     grid-template-columns: 1fr; }
   .formularios {
     grid-template-columns: auto; }
@@ -620,7 +637,7 @@
     margin-top: 300px; }
   .navConteiner1 {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 30px;
     z-index: 100; }
@@ -695,12 +712,17 @@
     .contenedorPrincipalO .ofertas li {
       margin-left: -8px; } }
 
+.navLabel {
+  position: fixed;
+  z-index: 200; }
+
 .navMenu {
   position: fixed;
-  top: 185px;
+  top: 0px;
   bottom: 0;
   background: #000;
   width: 100%;
+  height: 100vh;
   left: 0;
   display: flex;
   justify-content: space-evenly;
@@ -1169,6 +1191,8 @@
       .navContainer .iconoContainer .icono_1,
       .navContainer .iconoContainer .icono_2 {
         display: none; }
+      .navContainer .iconoContainer .icono_3 {
+        margin-right: 10px; }
       .navContainer .iconoContainer .a0 {
         font-size: 10px; }
     .navContainer .a1 {
@@ -1186,8 +1210,12 @@
     display: none;
     font-weight: lighter;
     letter-spacing: 0; }
+  .slide {
+    margin-top: 40px; }
+  .bannerGris {
+    margin-top: 0px; }
   .atajosGrid {
-    margin-top: 40px;
+    margin-top: 20px;
     grid-template-columns: 1fr; }
   .formularios {
     grid-template-columns: auto; }
@@ -1198,7 +1226,7 @@
     margin-top: 300px; }
   .navConteiner1 {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 30px;
     z-index: 100; }
@@ -1273,12 +1301,17 @@
     .contenedorPrincipalO .ofertas li {
       margin-left: -8px; } }
 
+.navLabel {
+  position: fixed;
+  z-index: 200; }
+
 .navMenu {
   position: fixed;
-  top: 185px;
+  top: 0px;
   bottom: 0;
   background: #000;
   width: 100%;
+  height: 100vh;
   left: 0;
   display: flex;
   justify-content: space-evenly;
@@ -1815,6 +1848,8 @@
       .navContainer .iconoContainer .icono_1,
       .navContainer .iconoContainer .icono_2 {
         display: none; }
+      .navContainer .iconoContainer .icono_3 {
+        margin-right: 10px; }
       .navContainer .iconoContainer .a0 {
         font-size: 10px; }
     .navContainer .a1 {
@@ -1832,8 +1867,12 @@
     display: none;
     font-weight: lighter;
     letter-spacing: 0; }
+  .slide {
+    margin-top: 40px; }
+  .bannerGris {
+    margin-top: 0px; }
   .atajosGrid {
-    margin-top: 40px;
+    margin-top: 20px;
     grid-template-columns: 1fr; }
   .formularios {
     grid-template-columns: auto; }
@@ -1844,7 +1883,7 @@
     margin-top: 300px; }
   .navConteiner1 {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 30px;
     z-index: 100; }
@@ -1919,12 +1958,17 @@
     .contenedorPrincipalO .ofertas li {
       margin-left: -8px; } }
 
+.navLabel {
+  position: fixed;
+  z-index: 200; }
+
 .navMenu {
   position: fixed;
-  top: 185px;
+  top: 0px;
   bottom: 0;
   background: #000;
   width: 100%;
+  height: 100vh;
   left: 0;
   display: flex;
   justify-content: space-evenly;
