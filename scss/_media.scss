@@ -337,6 +337,13 @@
   clip-path: circle(100% at center);
 }
 
+.mi-cuenta{
+  .campos-mi-cuenta{
+    width: 80%;
+    
+  }
+}
+
 @media screen and (max-width: 510px) {
   .a1 img {
     width: 150px;
@@ -360,6 +367,8 @@
   .footer{
     margin-top: 520px;
   }
+  
+ 
 }
 @media screen and (max-width: 360px) {
   .navContainer {
