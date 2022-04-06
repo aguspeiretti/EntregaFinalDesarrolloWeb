@@ -204,10 +204,11 @@
 
   .navConteiner1 {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 60px;
     left: 30px;
     z-index: 100;
+    cursor: pointer;
     
     .navInput {
       display: none;
@@ -291,7 +292,7 @@
   }
 }
 .navLabel{
-  position: fixed;
+  position: relative;
   z-index: 200;
 }
 .navMenu {

@@ -198,10 +198,11 @@
     margin-top: 300px; }
   .navConteiner1 {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 60px;
     left: 30px;
-    z-index: 100; }
+    z-index: 100;
+    cursor: pointer; }
     .navConteiner1 .navInput {
       display: none; }
   .contenedorPrincipal {
@@ -274,7 +275,7 @@
       margin-left: -8px; } }
 
 .navLabel {
-  position: fixed;
+  position: relative;
   z-index: 200; }
 
 .navMenu {
@@ -637,10 +638,11 @@
     margin-top: 300px; }
   .navConteiner1 {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 60px;
     left: 30px;
-    z-index: 100; }
+    z-index: 100;
+    cursor: pointer; }
     .navConteiner1 .navInput {
       display: none; }
   .contenedorPrincipal {
@@ -713,7 +715,7 @@
       margin-left: -8px; } }
 
 .navLabel {
-  position: fixed;
+  position: relative;
   z-index: 200; }
 
 .navMenu {
@@ -1226,10 +1228,11 @@
     margin-top: 300px; }
   .navConteiner1 {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 60px;
     left: 30px;
-    z-index: 100; }
+    z-index: 100;
+    cursor: pointer; }
     .navConteiner1 .navInput {
       display: none; }
   .contenedorPrincipal {
@@ -1302,7 +1305,7 @@
       margin-left: -8px; } }
 
 .navLabel {
-  position: fixed;
+  position: relative;
   z-index: 200; }
 
 .navMenu {
@@ -1883,10 +1886,11 @@
     margin-top: 300px; }
   .navConteiner1 {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 60px;
     left: 30px;
-    z-index: 100; }
+    z-index: 100;
+    cursor: pointer; }
     .navConteiner1 .navInput {
       display: none; }
   .contenedorPrincipal {
@@ -1959,7 +1963,7 @@
       margin-left: -8px; } }
 
 .navLabel {
-  position: fixed;
+  position: relative;
   z-index: 200; }
 
 .navMenu {
