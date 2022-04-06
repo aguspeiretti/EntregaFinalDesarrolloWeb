@@ -194,7 +194,8 @@
     display: block;
     position: absolute;
     top: 60px;
-    left: 30px; }
+    left: 30px;
+    z-index: 100; }
     .navConteiner1 .navInput {
       display: none; }
   .contenedorPrincipal {
@@ -621,7 +622,8 @@
     display: block;
     position: absolute;
     top: 60px;
-    left: 30px; }
+    left: 30px;
+    z-index: 100; }
     .navConteiner1 .navInput {
       display: none; }
   .contenedorPrincipal {
@@ -1198,7 +1200,8 @@
     display: block;
     position: absolute;
     top: 60px;
-    left: 30px; }
+    left: 30px;
+    z-index: 100; }
     .navConteiner1 .navInput {
       display: none; }
   .contenedorPrincipal {
@@ -1843,7 +1846,8 @@
     display: block;
     position: absolute;
     top: 60px;
-    left: 30px; }
+    left: 30px;
+    z-index: 100; }
     .navConteiner1 .navInput {
       display: none; }
   .contenedorPrincipal {
